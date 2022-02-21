@@ -21,6 +21,6 @@ jobs:
       - run:
           name: Run tests
           command: npm run test
-          export B=release/123
+       export B=release/123
 
-if [[ $B == *release/* ]]; then echo "yay"; else echo "nay"; fi;
+          if [[ $B == *release/* ]]; then echo "yay"; else echo "nay"; fi;
